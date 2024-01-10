@@ -7,18 +7,18 @@ This project involves the analysis and visualization of real estate data obtaine
 The project is organized into several sections, each focusing on a specific aspect of the real estate dataset. It includes data loading, exploration, cleaning, and visualization using matplotlib.
 Features
 
-    Data Loading: The dataset is loaded from a CSV file, assumed to be obtained through web scraping.
+Loading: The dataset is loaded from a CSV file, assumed to be obtained through web scraping.
 
-    Data Exploration: Initial exploration is performed using head() and info() functions to understand the structure of the dataset.
+Data Exploration: Initial exploration is performed using head() and info() functions to understand the structure of the dataset.
 
-    Data Cleaning: NaN values and duplicate entries are removed from the dataset. Additionally, certain columns deemed irrelevant are dropped.
+Data Cleaning: NaN values and duplicate entries are removed from the dataset. Additionally, certain columns deemed irrelevant are dropped.
 
-    Data Filtering: Outliers are filtered based on the criteria of total area and property price.
+Data Filtering: Outliers are filtered based on the criteria of total area and property price.
 
-    Visualization: Various visualizations are created to provide insights into the dataset, including a histogram of houses by city, bedroom distribution, facing direction pie chart, and scatter plots showing the relationship between total area and price.
+Visualization: Various visualizations are created to provide insights into the dataset, including a histogram of houses by city, bedroom distribution, facing direction pie chart, and scatter plots showing the relationship between total area and price.
 
 ## Prerequisites
-
+Data
     Python 3.x
     pandas
     matplotlib
