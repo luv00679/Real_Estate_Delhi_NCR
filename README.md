@@ -19,32 +19,22 @@ Visualization: Various visualizations are created to provide insights into the d
 
 ## Prerequisites
 Data
-    Python 3.x
-    pandas
-    matplotlib
+Python 3.x
+pandas
+matplotlib
 
 ## How to Use
 
-    Ensure you have the required dependencies installed by running:
+Ensure you have the required dependencies installed by running:
 
-    bash
 ```
 pip install pandas matplotlib
 ```
-Clone the repository and navigate to the project directory.
-
-Run the script:
-
-bash
-```
-    python real_estate_analysis.py
-```
-    Review the generated plots for insights into the real estate market trends.
 
 ## Dataset
 
 The dataset used in this project is obtained through web scraping. Ensure that your dataset follows a similar structure with columns such as "bedroom," "total_area," "Price," "facing," and "city."
 ## Additional Notes
 
-    Customize the code to match the structure and specifics of your real estate dataset.
-    Feel free to explore and enhance the script for more sophisticated analysis or additional features.
+Customize the code to match the structure and specifics of your real estate dataset.
+Feel free to explore and enhance the script for more sophisticated analysis or additional features.
