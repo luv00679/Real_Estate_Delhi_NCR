@@ -1,42 +1,50 @@
-# Real_Estate_Delhi_NCR
-This repository contains code for web scraping real estate data from Magicbricks.com using Python, followed by data analysis and visualization in R using the tidyverse package.
-## Python Web Scraping (Python Script: web.py)
-In this part of the project, Python is used to scrape real estate data from Magicbricks.com. The following libraries are used:
+# Real Estate Data Analysis Project
+## Overview
+This project involves the analysis and visualization of real estate data obtained through web scraping. The dataset includes information about different properties, such as the number of bedrooms, total area, price, and facing direction. The goal is to explore the dataset, clean the data, and derive insights through various visualizations.
 
-    BeautifulSoup from bs4
+## Project Structure
+
+The project is organized into several sections, each focusing on a specific aspect of the real estate dataset. It includes data loading, exploration, cleaning, and visualization using matplotlib.
+Features
+
+    Data Loading: The dataset is loaded from a CSV file, assumed to be obtained through web scraping.
+
+    Data Exploration: Initial exploration is performed using head() and info() functions to understand the structure of the dataset.
+
+    Data Cleaning: NaN values and duplicate entries are removed from the dataset. Additionally, certain columns deemed irrelevant are dropped.
+
+    Data Filtering: Outliers are filtered based on the criteria of total area and property price.
+
+    Visualization: Various visualizations are created to provide insights into the dataset, including a histogram of houses by city, bedroom distribution, facing direction pie chart, and scatter plots showing the relationship between total area and price.
+
+## Prerequisites
+
+    Python 3.x
     pandas
-    requests
-    Selenium
-### Prerequisites
-Before running the script, make sure to install the necessary Python packages using the following commands:
-```
-pip install beautifulsoup4
-pip install pandas
-pip install requests
-pip install selenium
-```
-### Usage
-The script scrapes real estate data, including property name, price, rate, and various property details, from multiple pages of Magicbricks.com.
-The data is then cleaned and structured into a DataFrame.
-The DataFrame is saved to a CSV file named real_estate_1.csv.
+    matplotlib
 
-## R Data Analysis and Visualization (R Script: land.R)
-In this part of the project, R is used to analyze and visualize the real estate data that was scraped and saved in the previous step.
-### Prerequisites
-Before running the R script, make sure to install the required R packages using the following commands:
-```
-install.packages("tidyverse")
-install.packages("stringr")
-```
-### Usage
-The R script reads the previously saved CSV file real_estate_1.csv.
-Data analysis and visualization are performed using the tidyverse package for data manipulation and ggplot2 for creating plots.
-### Key Visualizations
-    Scatter plots comparing price and various property attributes.
-    Bar charts showing property counts based on the number of bedrooms and the city.
-    Histograms for visualizing price distributions in different cities.
-    Calculations of average prices for properties with different numbers of bedrooms.
+## How to Use
 
-Please note that the Python script is responsible for collecting the data, while the R script focuses on data analysis and visualization. Both scripts should be used in conjunction to get a comprehensive understanding of the real estate market data.
+    Ensure you have the required dependencies installed by running:
 
-Feel free to adapt and extend this code for your own real estate data analysis project.
+    bash
+```
+pip install pandas matplotlib
+```
+Clone the repository and navigate to the project directory.
+
+Run the script:
+
+bash
+```
+    python real_estate_analysis.py
+```
+    Review the generated plots for insights into the real estate market trends.
+
+## Dataset
+
+The dataset used in this project is obtained through web scraping. Ensure that your dataset follows a similar structure with columns such as "bedroom," "total_area," "Price," "facing," and "city."
+## Additional Notes
+
+    Customize the code to match the structure and specifics of your real estate dataset.
+    Feel free to explore and enhance the script for more sophisticated analysis or additional features.
